@@ -1,0 +1,17 @@
+{
+  "name": "group-objects-array",
+  "version": "1.0.0",
+  "description": "\"Groups and merges array of objects by a single key\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "objects",
+    "array",
+    "key",
+    "group"
+  ],
+  "author": "Jana Rangasamy <janagr7@gmail.com>",
+  "license": "ISC"
+}
