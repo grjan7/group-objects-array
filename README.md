@@ -8,7 +8,9 @@ Groups JavaScript objects array by a key and returns grouped array.
 ## Example:
 
 ```js
-  
+
+ const { groupObjectArrayByKey } = require('./index.js');
+ 
  let objArray = [
   {id: 1, name: "John"},
   {id: 2, name: "Aaron"},
