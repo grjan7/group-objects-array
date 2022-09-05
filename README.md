@@ -5,11 +5,18 @@ Groups JavaScript objects array by a key and returns grouped array.
 
   Groups the scattered objects in an array based on a groupByKey (e.g. id). For the given groupByKey value, if there is a multiple occurrence of same key (e.g., contact key for id:3) but with unique values, then the values will be grouped into an array.
 
+## Installation
+```sh
+
+  npm i group-objects-array
+
+```
+
 ## Example:
 
 ```js
 
- const { groupObjectArrayByKey } = require('./index.js');
+ const { groupObjectArrayByKey } = require('group-objects-array');
  
  let objArray = [
   {id: 1, name: "John"},
