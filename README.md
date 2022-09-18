@@ -15,7 +15,7 @@ Groups JavaScript objects array by a key and returns grouped array.
 
 ## Usage:
 
-### groupObjectArrayByKey(objArr, groupByKey)
+### `groupObjectArrayByKey(objArr, groupByKey)`
 
 - **objArr** an array of objects to be grouped
 - **groupByKey** an object key to group the objects
