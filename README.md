@@ -45,9 +45,22 @@ Groups JavaScript objects array by a key and returns grouped array.
  
  ```js
  [
-  {id: 1, name: "John", age: 20, address: {street: "123 Main Street", city: "NY", country: "USA"}},
-  {id: 2, name: "Aaron", age: 30},
-  {id: 3, name: "Michel", contact: ["+01-51245 53125", "+02-51245 53125"]}
+    {
+      id: 1, 
+      name: "John", 
+      age: 20, 
+      address: {street: "123 Main Street", city: "NY", country: "USA"}
+    },
+    {
+      id: 2,
+      name: "Aaron",
+      age: 30
+    },
+    {
+      id: 3,
+      name: "Michel",
+      contact: ["+01-51245 53125", "+02-51245 53125"]
+    } 
  ]
 
  ```
@@ -61,7 +74,13 @@ This function returns an array with duplicates removed.
 ```js
 
 const { uniqueArray } = require("group-objects-array");
-const arr = [{name: "John", age: 30}, {name: "Doe", age: 29}, {name: "John", age: 30}, {name: "Michel", age: 21}];
+
+const arr = [
+  {name: "John", age: 30},
+  {name: "Doe", age: 29},
+  {name: "John", age: 30},
+  {name: "Michel", age: 21}
+];
 
 uniqueArray(arr);
 
@@ -71,7 +90,11 @@ returns
 
 ```js
 
-  [{name: "John", age: 30}, {name: "Doe", age: 29}, {name: "Michel", age: 21}]
+[
+  {name: "John", age: 30},
+  {name: "Doe", age: 29},
+  {name: "Michel", age: 21}
+]
 
 ```
 
@@ -85,6 +108,7 @@ This function checks if an item is in the given array.
 ```js
 
 const { isItemInArray } = require("group-objects-array");
+
 const arr = [{name: "John"}, "world"];
 
 isItemInArray(arr, {name: "John"}); // returns true
