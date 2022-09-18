@@ -1,10 +1,10 @@
 {
   "name": "group-objects-array",
   "version": "1.0.1",
-  "description": "\"Groups and merges array of objects by a single key\"",
+  "description": "Groups and merges array of objects by a single key.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./tests/groupObjectArrayByKey.spec.js"
   },
   "keywords": [
     "objects",
@@ -13,5 +13,13 @@
     "group"
   ],
   "author": "Jana Rangasamy <janagr7@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grjan7/group-objects-array.git"
+  },
+  "homepage": "https://github.com/grjan7/group-objects-array#readme",
+  "bugs": {
+    "url": "https://github.com/grjan7/group-objects-array/issues"
+  }
 }
