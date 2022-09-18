@@ -1,6 +1,6 @@
 {
   "name": "group-objects-array",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Groups and merges array of objects by a single key.",
   "main": "index.js",
   "scripts": {
