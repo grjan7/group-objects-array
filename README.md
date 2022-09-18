@@ -20,6 +20,7 @@ Groups JavaScript objects array by a key and returns grouped array.
 - **objArr** an array of objects to be grouped
 - **groupByKey** an object key to group the objects
 
+
 ```js
 
  const { groupObjectArrayByKey } = require('group-objects-array');
@@ -43,9 +44,9 @@ Groups JavaScript objects array by a key and returns grouped array.
  
  ```js
  [
- {id: 1, name: "John", age: 20, address: {street: "123 Main Street", city: "NY", country: "USA"}},
- {id: 2, name: "Aaron", age: 30},
- {id: 3, name: "Michel", contact: ["+01-51245 53125", "+02-51245 53125"]}
+  {id: 1, name: "John", age: 20, address: {street: "123 Main Street", city: "NY", country: "USA"}},
+  {id: 2, name: "Aaron", age: 30},
+  {id: 3, name: "Michel", contact: ["+01-51245 53125", "+02-51245 53125"]}
  ]
 
  ```
