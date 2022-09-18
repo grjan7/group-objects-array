@@ -42,14 +42,14 @@ Groups JavaScript objects array by a key and returns grouped array.
  ```
 
  returns
-  
+
  ```js
  [
    {
      id: 1, 
      name: "John", 
      age: 20, 
-     address: {street: "123 Main Street", city: "NY", country: "USA"}
+     address: { street: "123 Main Street", city: "NY", country: "USA" }
    },
    {
      id: 2,
@@ -59,7 +59,7 @@ Groups JavaScript objects array by a key and returns grouped array.
    {
      id: 3,
      name: "Michel",
-     contact: ["+01-51245 53125", "+02-51245 53125"]
+     contact: [ "+01-51245 53125", "+02-51245 53125" ]
    } 
  ]
 
