@@ -14,53 +14,53 @@ Groups JavaScript objects array by a key and returns grouped array.
 
 ```
 
-## Usage:
+## Usage
 
 ### `groupObjectArrayByKey(objArr, groupByKey)`
 
 - **objArr** an array of objects to be grouped
 - **groupByKey** an object key to group the objects
 
-
 ```js
 
  const { groupObjectArrayByKey } = require('group-objects-array');
  
  const objArray = [
-  {id: 1, name: "John"},
-  {id: 2, name: "Aaron"},
-  {id: 1, age: 20},
-  {id: 2, age: 30},
-  {id: 3, name: "Michel"},
-  {id: 1, address: {street: "123 Main Street", city: "NY", country: "USA"}},
-  {id: 3, contact: "+01-51245 53125"},
-  {id: 3, contact: "+02-51245 53125"},
-  {id: 1, address: {street: "123 Main Street", city: "NY", country: "USA"}}  
+   { id: 1, name: "John" },
+   { id: 2, name: "Aaron" },
+   { id: 1, age: 20 },
+   { id: 2, age: 30 },
+   { id: 3, name: "Michel" },
+   { id: 1, address: { street: "123 Main Street", city: "NY", country: "USA" } },
+   { id: 3, contact: "+01-51245 53125" },
+   { id: 3, contact: "+02-51245 53125" },
+   { id: 1, address: { street: "123 Main Street", city: "NY", country: "USA" } }  
  ];
   
  groupObjectArrayByKey(objArray, "id");
  
- ``` 
+ ```
+
  returns
- 
+  
  ```js
  [
-    {
-      id: 1, 
-      name: "John", 
-      age: 20, 
-      address: {street: "123 Main Street", city: "NY", country: "USA"}
-    },
-    {
-      id: 2,
-      name: "Aaron",
-      age: 30
-    },
-    {
-      id: 3,
-      name: "Michel",
-      contact: ["+01-51245 53125", "+02-51245 53125"]
-    } 
+   {
+     id: 1, 
+     name: "John", 
+     age: 20, 
+     address: {street: "123 Main Street", city: "NY", country: "USA"}
+   },
+   {
+     id: 2,
+     name: "Aaron",
+     age: 30
+   },
+   {
+     id: 3,
+     name: "Michel",
+     contact: ["+01-51245 53125", "+02-51245 53125"]
+   } 
  ]
 
  ```
@@ -76,10 +76,10 @@ This function returns an array with duplicates removed.
 const { uniqueArray } = require("group-objects-array");
 
 const arr = [
-  {name: "John", age: 30},
-  {name: "Doe", age: 29},
-  {name: "John", age: 30},
-  {name: "Michel", age: 21}
+  { name: "John", age: 30 },
+  { name: "Doe", age: 29 },
+  { name: "John", age: 30 },
+  { name: "Michel", age: 21 }
 ];
 
 uniqueArray(arr);
@@ -91,9 +91,9 @@ returns
 ```js
 
 [
-  {name: "John", age: 30},
-  {name: "Doe", age: 29},
-  {name: "Michel", age: 21}
+  { name: "John", age: 30 },
+  { name: "Doe", age: 29 },
+  { name: "Michel", age: 21 }
 ]
 
 ```
@@ -109,8 +109,8 @@ This function checks if an item is in the given array.
 
 const { isItemInArray } = require("group-objects-array");
 
-const arr = [{name: "John"}, "world"];
+const arr = [ { name: "John" }, "world" ];
 
-isItemInArray(arr, {name: "John"}); // returns true
+isItemInArray(arr, { name: "John" }); // returns true
 
 ```
