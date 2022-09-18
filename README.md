@@ -54,11 +54,13 @@ Groups JavaScript objects array by a key and returns grouped array.
 
 ### `uniqueArray(arr)`
 
+This function returns an array with duplicates removed.
+
 - **arr** an array to be deduplicated to have only unique values
 
 ```js
 
-const {uniqueArray} = require("group-objects-array");
+const { uniqueArray } = require("group-objects-array");
 const arr = [{name: "John", age: 30}, {name: "Doe", age: 29}, {name: "John", age: 30}, {name: "Michel", age: 21}];
 
 uniqueArray(arr);
@@ -70,5 +72,21 @@ returns
 ```js
 
   [{name: "John", age: 30}, {name: "Doe", age: 29}, {name: "Michel", age: 21}]
+
+```
+
+### `isItemInArray(arr, item)`
+
+This function checks if an item is in the given array.
+
+- **arr** source array
+- **item** item to be checked whether it is in the array  
+
+```js
+
+const { isItemInArray } = require("group-objects-array");
+const arr = [{name: "John"}, "world"];
+
+isItemInArray(arr, {name: "John"}); // returns true
 
 ```
