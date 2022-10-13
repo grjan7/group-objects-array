@@ -1,8 +1,12 @@
 # group-objects-array
 
-Groups JavaScript objects array by a key and returns grouped array.
+[![NPM version](https://img.shields.io/npm/v/group-objects-array.svg)](https://www.npmjs.com/package/group-objects-array)
+[![NPM downloads](https://img.shields.io/npm/dm/group-objects-array.svg)](https://www.npmjs.com/package/group-objects-array)
+[![Known Vulnerabilities](https://snyk.io/test/github/grjan7/group-objects-array/badge.svg)](https://snyk.io/test/github/grjan7/group-objects-array)
 
-## Summary
+## Description
+
+  > Groups JavaScript objects array by a key and returns grouped array.
 
   Groups the scattered objects in an array based on a `groupByKey` (e.g. id). For the given `groupByKey` value, if there is a multiple occurrence of same key (e.g., contact key for id: 3) but with unique values, then the values will be grouped into an array.
 
